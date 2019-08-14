@@ -2,9 +2,19 @@
   "name": "astar-web",
   "version": "0.1.0",
   "private": true,
+  "keywords": [
+    "a-star",
+    "astar",
+    "astar-core",
+    "astar-web",
+    "algorithm",
+    "ant.design",
+    "antd",
+    "typescript"
+  ],
   "dependencies": {
     "antd": "^3.21.4",
-    "astar-core": "^1.0.3",
+    "astar-core": "^1.0.4",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
