@@ -364,7 +364,7 @@ class App extends React.Component {
                 <Button type="primary" htmlType="submit">
                   生成地图
                 </Button>
-                <Alert message="修改配置后请点击【生成地图】已重新生成新的地图" banner closable />
+                <Alert message="修改配置后请点击【生成地图】重新生成新的地图" banner closable />
               </Form.Item>
             </Form>
           </Card>
