@@ -228,7 +228,7 @@ class App extends React.Component {
   }
 
   renderMapGraphCell(node, idx) {
-    const { gridSize, start, end, showSearchInfo } = this.state;
+    const { gridSize, start, end, showSearchInfo, diagonal } = this.state;
     const cellStyle = {
       width: (GRID_SIZE.width / gridSize),
       height: (GRID_SIZE.height / gridSize),
@@ -244,9 +244,9 @@ class App extends React.Component {
           node.visited && showSearchInfo && gridSize < 13 && !isEndNode
             ? (
               <span>
-                <span className="search_info f">f:{node.f}</span>
-                <span className="search_info g">g:{node.g}</span>
-                <span className="search_info h">h:{node.h}</span>
+                <span className={`search_info${diagonal ? ' diagonal' : ''} f`}>f:{diagonal ? Number(node.f).toFixed(1) : node.f}</span>
+                <span className={`search_info${diagonal ? ' diagonal' : ''} g`}>g:{diagonal ? Number(node.g).toFixed(1) : node.g}</span>
+                <span className={`search_info${diagonal ? ' diagonal' : ''} h`}>h:{diagonal ? Number(node.h).toFixed(1) : node.h}</span>
                 <span className="search_info point">{`(${node.x}, ${node.y})`}</span>
               </span>
             )
