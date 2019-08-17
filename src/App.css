@@ -26,13 +26,16 @@
   background-color: #9CA69D;
 }
 .grid_item.start {
-  background-color: rgb(206, 29, 153);
+  background-color: #ff7c7c;
 }
 .grid_item.end {
-  background-color: rgb(81, 46, 236);
+  background-color: #60acfc;
 }
-.grid_item.active {
-  background-color: rgb(13, 151, 48);
+.grid_item.current_active {
+  background-color: #feb64d;
+}
+.grid_item.path_active {
+  background-color: #5bc49f;
 }
 
 .search_info {
